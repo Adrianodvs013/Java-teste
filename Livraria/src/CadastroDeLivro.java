@@ -2,7 +2,7 @@ public class CadastroDeLivro {
     public static void main(String[] args) {
 
         Autor autor = new Autor();
-        autor.setNome("Rodrigoo Turini");
+        autor.setNome("Rodrigo Turini");
         autor.setEmail("rodrigo.turini@caelum.com.br");
         autor.setCpf("123.456.789.10");
 
