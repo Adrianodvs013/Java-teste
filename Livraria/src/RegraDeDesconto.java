@@ -23,11 +23,6 @@ public class RegraDeDesconto {
             System.out.println("Valor do ebook com desconto:" + ebook.getValor());
         }
 
-<<<<<<< HEAD
-             }
-=======
-        
     }
->>>>>>> 022af7618ab267fe9f5bb37513b86867dae636eb
 
 }
