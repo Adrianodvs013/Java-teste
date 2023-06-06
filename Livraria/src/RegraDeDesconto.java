@@ -23,13 +23,6 @@ public class RegraDeDesconto {
                                        System.out.println("Valor do ebook com desconto:" + ebook.getValor());
                           }
 
-                          LivroFisico livroCulinaria = new LivroFisico(autor);
-                          livroCulinaria.setNome("Como Fazer uma Feijoada!");
-                          livroCulinaria.setValor(80.00);
-
-                          double taxaImpressao = livroCulinaria(autor);
-                          System.out.println("Taxa de Impressão");
-
              }
 
 }
