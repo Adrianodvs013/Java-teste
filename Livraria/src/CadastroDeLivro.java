@@ -28,6 +28,14 @@ public class CadastroDeLivro {
 
         outroLivro.setAutor(outroAutor);
         outroLivro.mostrarDetalhes();
+
+        LivroFisico livroCulinaria = new LivroFisico(autor);
+        livroCulinaria.setNome("Como Fazer uma Feijoada!");
+        livroCulinaria.setValor(80.00);
+
+        double taxaImpressao = livroCulinaria(autor);
+        System.out.println("Taxa de Impressão");
+
     }
 
 }

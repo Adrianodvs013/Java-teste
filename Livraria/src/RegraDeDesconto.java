@@ -1,6 +1,7 @@
 public class RegraDeDesconto {
 
              public static void main(String[] args) {
+
                           Autor autor = new Autor();
                           autor.setNome("Rodrigo Turini");
 
@@ -16,11 +17,19 @@ public class RegraDeDesconto {
                           Ebook ebook = new Ebook(autor);
                           ebook.setValor(29.90);
 
-                          if (!ebook.aplicaDescontoDe(0.3)) {
+                          if (!ebook.aplicaDescontoDe(0.15)) {
                                        System.out.println("Desconto no ebook não pode ser maior do que 15%");
                           } else {
                                        System.out.println("Valor do ebook com desconto:" + ebook.getValor());
                           }
 
+                          LivroFisico livroCulinaria = new LivroFisico(autor);
+                          livroCulinaria.setNome("Como Fazer uma Feijoada!");
+                          livroCulinaria.setValor(80.00);
+
+                          double taxaImpressao = livroCulinaria(autor);
+                          System.out.println("Taxa de Impressão");
+
              }
+
 }
