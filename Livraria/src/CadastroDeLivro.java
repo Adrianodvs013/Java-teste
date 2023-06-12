@@ -29,7 +29,6 @@ public class CadastroDeLivro {
         outroLivro.setAutor(outroAutor);
         outroLivro.mostrarDetalhes();
 
-       
     }
 
 }
