@@ -1,3 +1,4 @@
+
 public abstract class Livro {
 
     private String nome;
@@ -7,13 +8,13 @@ public abstract class Livro {
     private Autor autor;
 
     public Livro(Autor autor) {
-        this();
         this.autor = autor;
-    }
-
-    public Livro() {
         this.isbn = "000-00-00000-00-0";
     }
+
+    //Apenas classes abstratas podem ter métodos abstratos.
+    public abstract boolean aplicaDescontoDe(double porcentagem);
+        
 
     void mostrarDetalhes() {
 
@@ -32,14 +33,14 @@ public abstract class Livro {
 
     }
 
-    public boolean aplicaDescontoDe(double porcentagem) {
+    /*yupublic boolean aplicaDescontoDe(double porcentagem) {
         if (porcentagem > 0.3) {
             return false;
         }
 
         this.valor -= this.valor * porcentagem;
         return true;
-    }
+    }*/
 
     public double getValor() {
         return valor;

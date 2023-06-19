@@ -34,4 +34,8 @@ public class Autor {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+
+    public boolean aplicaDescontoDe(double porcentagem){
+        return false;
+    }
 }
